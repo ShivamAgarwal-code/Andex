@@ -6,7 +6,6 @@ type BigNumberish = BN | number | string
 
 interface FarmAprParams {
   poolWeight: BigNumberish
-  // Total tvl staked in farm in usd
   tvlUsd: BigNumberish
   cakePriceUsd: BigNumberish
   cakePerSecond: BigNumberish
