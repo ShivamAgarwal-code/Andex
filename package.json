@@ -1,0 +1,34 @@
+{
+  "name": "mode-swap",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build --filter=web...",
+    "storybook": "turbo run start --filter=uikit...",
+    "build:storybook": "turbo run build:storybook --filter=uikit...",
+    "build:web": "turbo run build:storybook --filter=web...",
+    "build:packages":	"turbo run build --filter=./packages/*",
+    "dev": "turbo run dev --filter=web... --concurrency=24",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^20.10.4",
+    "prettier": "^3.1.0",
+    "turbo": "latest",
+    "typescript": "^5.2.2",
+    "vitest": "^0.30.1"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^8.0.1",
+    "crypto": "^1.0.1",
+    "encoding": "^0.1.13",
+    "ws": "^8.13.0"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
