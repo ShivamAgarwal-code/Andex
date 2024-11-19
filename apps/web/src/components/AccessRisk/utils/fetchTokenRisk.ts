@@ -11,6 +11,7 @@ export interface RiskTokenInfo {
   riskLevelDescription: string
   pollingInterval: number
   isError: boolean
+  chainInfo: string
 }
 
 const fetchRiskApi = async (address: string, chainId: number) => {
