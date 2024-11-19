@@ -12,8 +12,7 @@ export const chainNameToChainId = Object.entries(chainNames).reduce((acc, [chain
   }
 }, {} as Record<string, ChainId>)
 
-// @see https://github.com/DefiLlama/defillama-server/blob/master/common/chainToCoingeckoId.ts
-// @see https://github.com/DefiLlama/chainlist/blob/main/constants/chainIds.json
+
 export const defiLlamaChainNames: Record<ChainId, string> = {
   [ChainId.MODE_TESTNET]: 'mode',
   [ChainId.MODE_MAINNET]: 'mode',
