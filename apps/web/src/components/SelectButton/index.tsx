@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import { space } from 'styled-system'
 import { LightGreyCard } from 'components/Card'
+import React from 'react'
 
 export const StyledCard = styled.button<{ isActive?: boolean }>`
   cursor: pointer;
