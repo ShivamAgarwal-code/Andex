@@ -1,3 +1,5 @@
+"use client";
+
 import { Link, Text, BscScanIcon } from "@pancakeswap/uikit";
 import { ChainId } from "@pancakeswap/chains";
 import { getBlockExploreLink, getBlockExploreName } from "utils";
